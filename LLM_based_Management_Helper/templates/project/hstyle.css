@@ -1,0 +1,121 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/bgimage.jpg'); /* Replace with your actual image path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-color: #f4f4f4; /* Fallback background color if the image doesn't load */
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #230000; /* Slight transparency for visibility over the background image */
+    padding: 10px 20px;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-left h1 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right a {
+    margin-right: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.nav-right a:hover {
+    color: #fdfdfd;
+}
+
+/* Chat Box */
+.chat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.chat-box {
+    width: 400px;
+    background: rgba(191, 223, 232, 0.9); /* Slight transparency for the chat box */
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.chat-header {
+    background: #8b0000; /* Slight transparency for visibility over background */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.chat-body {
+    padding: 20px;
+    height: 300px;
+    overflow-y: auto;
+    background-color: rgba(224, 247, 255, 0.9); /* Slight transparency */
+}
+
+.chat-footer {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: rgba(240, 240, 240, 0.9); /* Slight transparency */
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.chat-footer input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+    margin-right: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chat-footer button {
+    padding: 10px 20px;
+    background-color: #8b0000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.chat-footer button:hover {
+    background-color: #910202c5;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.bot-message {
+    background-color: #230000;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
