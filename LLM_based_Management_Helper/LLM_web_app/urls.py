@@ -6,5 +6,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
     
-    path('', views.index, name='home')
+    path('', views.index, name='index')
 ]
