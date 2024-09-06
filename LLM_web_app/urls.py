@@ -6,12 +6,12 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
     
-    path('', views.index, name='index'),
+    # path('', views.index, name='index'),
     
     path('about', views.about, name='about'),
     path('contact', views.contact, name='contact'),
     path('courses', views.courses, name='courses'),
-    path('home', views.home, name='home'),
+    path('', views.home, name='home'),
     path('profile', views.profile, name='profile'),
     path('teachers', views.teachers, name='teachers'),
     path('update', views.update, name='update'),
